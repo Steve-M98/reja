@@ -1,5 +1,6 @@
 console.log("Web Serverni boshlash");
 const express = require("express");
+const res = require('express/lib/response');
 const app = express();
 const http = require("http");
 
@@ -17,13 +18,16 @@ app.set("'views", "views");
 app.set("view engine", "ejs");
 
 // 4: ROUTING CODE
-app.get("/hello", function (req, res) { 
-    res.send(`<h1 style="background: greenyellow">HELLO WORLD! by STEVE DEV</h1>`);
+app.post('/create-item', (req, res) => {
+    console.log("req.body");
+    res.json({ test: "success" });
 });
 
-app.get("/gift", function (req, res) { 
-    res.send(`<h1 style="background: greenyellow">Siz sovg'alar bo'limidasiz</h1>`);
+app.get("/", function (req, res) { 
+    res.render("harid");
 });
+
+
 
 const server = http.createServer(app);
 let PORT = 3000;
