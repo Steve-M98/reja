@@ -23,7 +23,7 @@ app.use(express.urlencoded({extended: true}));
 // 2: SESSION CODE
 
 // 3:VIEWS CODE
-
+ 
 app.set("'views", "views");
 app.set("view engine", "ejs");
 
@@ -32,20 +32,20 @@ app.post('/create-item', (req, res) => {
     console.log("req.body");
     res.json({ test: "success" });
 });
-
+  
 app.get('/author',(req, res) => {
   res.render("author", {user: user});
-})
-
+}) 
+  
 
 app.get("/", function (req, res) { 
     res.render("harid");
 });
 
 
-
 const server = http.createServer(app);
-let PORT = 3000;
+let PORT = 3000; 
 server.listen(PORT,  function() {
     console.log(`The server is running successfully on port: ${PORT}`);
 });
+       
