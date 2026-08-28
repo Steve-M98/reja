@@ -1,260 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script> 
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css "
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <title>PORTFOLIO</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="frame">
-        <div class="main_frame">
-            <!-- LEFT FRAME -->
-            <div class="left_frame">
-               <div class="left_box_1">
-                <div class="left_1_img">
-                    <img src="images/profile.png" width1="156px" height="142px" alt="">
-                </div>
-                <div class="left_1_title"><%=user.name%></div>
-                <div class="left_1_desc"><%=user.profession%></div>
-                <div class="left_icons">
-                    <a class="link_icon" href="">
-                        <div class="icon">
-                            <img src="icon/Icons-facebook.svg" class="icon_i" alt="">
-                        </div>
-                    </a>
-                    <a class="link_icon" href="">
-                        <div class="icon">
-                            <img src="icon/Icons-instagram.svg" class="icon_i" alt="">
-                        </div>
-                    </a>
-                    <a class="link_icon" href="">
-                        <div class="icon">
-                            <img src="icon/Icons-linkedin.svg" class="icon_i" alt="">
-                        </div>
-                    </a>
-                    <a class="link_icon" href="">
-                        <div class="icon">
-                            <img src="icon/Icons-twitter.svg" class="icon_i" alt="">
-                        </div>
-                    </a>
-                    <a class="link_icon" href="">
-                        <div class="icon">
-                            <img src="icon/Icons-Youtube.svg" class="icon_i" alt="">
-                        </div>
-                    </a>
-                     <a class="link_icon" href="">
-                        <div class="icon">
-                            <img src="icon/Icons-dribbble.png" class="icon_i" alt="">
-                        </div>
-                    </a>
-                </div>
-
-               </div>
-               <div class="border_bott"></div>
-                <div class="left_box_2">
-                    <div class="about_box">
-                        <div class="about_info">Age:</div>
-                        <div class="about_title"><%=user.age%></div>
-                    </div>
-                    <div class="about_box">
-                        <div class="about_info" style="width: 78px">Residence:</div>
-                        <div class="about_title"><%=user.residence%></div>
-                    </div>
-                    <div class="about_box">
-                        <div class="about_info" style="width: 74px;">Freelance:</div>
-                        <div class="about_title" style="color:rgb(135, 233, 145)"><%=user.freelance%></div>
-                    </div>
-                    <div class="about_box">
-                        <div class="about_info" style="width: 63px;">Address:</div>
-                        <div class="about_title"><%=user.address%></div>
-                    </div>
-                    </div>
-               <div class="border_bott"></div>
-                <div class="left_box_3">
-                    <div class="left_3_title">Languages</div>
-                    <div class="lang_info">
-                        <span class="lang_name">Uzbek</span>
-                        <span class="lang_pro">100%</span>
-                    </div>
-                    <div class="lang_stc_1">
-                        <div class="stc_1_bord"></div>
-                    </div>
-                     <div class="lang_info">
-                        <span class="lang_name" style="margin-top: 10px;">Korean</span>
-                        <span class="lang_pro">80%</span>
-                    </div>
-                    <div class="lang_stc_2">
-                        <div class="stc_2_bord"></div>
-                    </div>
-                     <div class="lang_info">
-                        <span class="lang_name"  style="margin-top: 10px;">English</span>
-                        <span class="lang_pro">50%</span>
-                    </div>
-                     <div class="lang_stc_3">
-                         <div class="stc_3_bord"></div>
-                     </div>
-                </div>
-               <div class="border_bott"></div>
-                <div class="left_box_4">
-                     <div class="left_4_title">Skills</div>
-                    <div class="skill_info">
-                        <span class="skill_name">HTML</span>
-                        <span class="skill_pro">90%</span>
-                    </div>
-                    <div class="skill_stc_1">
-                        <div class="stc_1_bord"></div>
-                    </div>
-                     <div class="skill_info">
-                        <span class="skill_name" style="margin-top: 10px;">CSS</span>
-                        <span class="skill_pro">85%</span>
-                    </div>
-                    <div class="skill_stc_2">
-                        <div class="stc_2_bord"></div>
-                    </div>
-                     <div class="skill_info">
-                        <span class="skill_name"  style="margin-top: 10px;">Js</span>
-                        <span class="skill_pro">80%</span>
-                    </div>
-                     <div class="skill_stc_3">
-                         <div class="stc_3_bord"></div>
-                     </div>
-                      <div class="skill_info">
-                        <span class="skill_name"  style="margin-top: 10px;">PHP</span>
-                        <span class="skill_pro">75%</span>
-                    </div>
-                     <div class="skill_stc_3">
-                         <div class="stc_3_bord" style=" width: 140px;"></div>
-                     </div>
-                      <div class="skill_info">
-                        <span class="skill_name"  style="margin-top: 10px;">WordPress</span>
-                        <span class="skill_pro">85%</span>
-                    </div>
-                     <div class="skill_stc_3">
-                         <div class="stc_3_bord" style=" width: 169px;"></div>
-                     </div>
-                </div>
-               <div class="border_bott"></div>
-                <div class="left_box_5">
-                    <div class="left_5_title">Extra Skills</div>
-                    <div class="skill_box">
-                        <img src="icon/Icons-2.svg" alt="">
-                        <span class="skill_title">Bootstrap, Materialize</span>
-                    </div>
-                      <div class="skill_box">
-                        <img src="icon/Icons-2.svg" alt="">
-                        <span class="skill_title">Stylus, Sass, Less</span>
-                    </div>
-                      <div class="skill_box">
-                        <img src="icon/Icons-2.svg" alt="">
-                        <span class="skill_title">Gulp, Webpack, Grunt</span>
-                    </div>
-                      <div class="skill_box">
-                        <img src="icon/Icons-2.svg" alt="">
-                        <span class="skill_title">GIT Knowledge</span>
-                    </div>
-                </div>
-               <div class="border_bott"></div>
+      <div class="main_frame">
+        <!-- LEFT FRAME -->
+        <div class="left_frame">
+          <div class="left_box_1">
+            <div class="left_1_img">
+              <img
+                src="images/profile.png"
+                width1="156px"
+                height="142px"
+                alt=""
+              />
             </div>
-            <!--  MIDDLE FRAME -->
-            <div class="midd_frame">
-                <div class="midd_top">
-                    <div class="icon_12"></div>
-                    <div class="icon_13"></div>
-                    <div class="icon_16"></div>
-                    <div class="icon_10"></div>
-                    <div class="icon_51"></div>
-                    <div class="icon_52"></div>
-                    <div class="midd_top_left">
-                        <div class="midd_title">Doctor neurologists in OHSU Hospital</div>
-                        <span class="midd_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</span>
-                        <a href="author.ejs" class="midd_btn">
-                            <button>HIRE ME
-                                <img src="icon/frame.svg" alt="">
-                            </button>
-                        </a>
-                    </div>
-                    <div class="midd_top_right">
-                        <img src="images/main image.png" alt="">
-                    </div>
+            <div class="left_1_title"><%=user.name%></div>
+            <div class="left_1_desc"><%=user.profession%></div>
+            <div class="left_icons">
+              <a class="link_icon" href="">
+                <div class="icon">
+                  <img src="icon/Icons-facebook.svg" class="icon_i" alt="" />
                 </div>
-                 <div class="midd_bott">
-                    <div class="midd_bott_title">
-                        <span class="bott_title_info"> My Services</span>
-                        <span class="bott_title_desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum</span>
-                    </div>
-                    <div class="midd_bott_boxes">
-                         <div class="midd_bott_box">
-                            <img src="box_images/coding.png" alt="">
-                            <span class="box_title">Web Development</span>
-                            <span class="box_desc">Blog, E-Commerce</span>
-                         </div>
-                          <div class="midd_bott_box">
-                            <img src="box_images/Icons_illustration.png" alt="">
-                            <span class="box_title">UI/UX Design</span>
-                            <span class="box_desc">Mobile App, Website Design</span>
-                         </div>
-                          <div class="midd_bott_box">
-                            <img src="box_images/Microphone.png" alt="">
-                            <span class="box_title">Sound Design</span>
-                            <span class="box_desc">Voice Over, Beat Making</span>
-                         </div>
-                          <div class="midd_bott_box">
-                            <img src="box_images/Icons_game-development.png" alt="">
-                            <span class="box_title">Game Design</span>
-                            <span class="box_desc">Character designn, Props & Objects</span>
-                         </div>
-                          <div class="midd_bott_box">
-                            <img src="box_images/Photographer.png" alt="">
-                            <span class="box_title">Photography</span>
-                            <span class="box_desc">Portrait, Product Photography</span>
-                         </div>
-                         <div class="bott_box_x">
-                            <span class="box_title_x">Advertising</span>
-                            <span class="box_desc_x">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi</span>
-                            <a href="./author">ORDER NOW
-                                <img src="btn_icon/frame-2.svg" alt="">
-                            </a>
-                         </div>
-                    </div>
+              </a>
+              <a class="link_icon" href="">
+                <div class="icon">
+                  <img src="icon/Icons-instagram.svg" class="icon_i" alt="" />
                 </div>
+              </a>
+              <a class="link_icon" href="">
+                <div class="icon">
+                  <img src="icon/Icons-linkedin.svg" class="icon_i" alt="" />
                 </div>
-               <div class="right_frame">
-                 <div class="frst_icon">
-                    <img src="menu_icon/contrast.svg" alt="">
-                 </div>
-                 <div class="scnd_icons">
-                    <div class="hover_box">
-                       <div class="icon_hover">
-                        <img src="menu_icon/Icons_Home.svg" class="home" alt="">
-                     </div>
-                    </div>
-                      <div class="hover_box"> <div class="icon_hover">
-                        <img src="menu_icon/file-code.svg" alt="">
-                    </div>
+              </a>
+              <a class="link_icon" href="">
+                <div class="icon">
+                  <img src="icon/Icons-twitter.svg" class="icon_i" alt="" />
                 </div>
-                       <div class="hover_box">  <div class="icon_hover">
-                        <img src="menu_icon/file-code.svg" alt="">
-                    </div>
+              </a>
+              <a class="link_icon" href="">
+                <div class="icon">
+                  <img src="icon/Icons-Youtube.svg" class="icon_i" alt="" />
                 </div>
-                        <div class="hover_box">    <div class="icon_hover">
-                       <img src="menu_icon/cv.svg" alt="">
-                    </div>
+              </a>
+              <a class="link_icon" href="">
+                <div class="icon">
+                  <img src="icon/Icons-dribbble.png" class="icon_i" alt="" />
                 </div>
-                         <div class="hover_box">  <div class="icon_hover">
-                      <img src="menu_icon/blog.svg" alt="">
-                    </div>
-                </div>
-                          <div class="hover_box">  <div class="icon_hover">
-                    <img src="menu_icon/contact.svg" alt="">
-                    </div>
-                </div>
-                 </div>
-               </div>
+              </a>
             </div>
+          </div>
+          <div class="border_bott"></div>
+          <div class="left_box_2">
+            <div class="about_box">
+              <div class="about_info">Age:</div>
+              <div class="about_title"><%=user.age%></div>
+            </div>
+            <div class="about_box">
+              <div class="about_info" style="width: 78px">Residence:</div>
+              <div class="about_title"><%=user.residence%></div>
+            </div>
+            <div class="about_box">
+              <div class="about_info" style="width: 74px">Freelance:</div>
+              <div class="about_title" style="color: rgb(135, 233, 145)">
+                <%=user.freelance%>
+              </div>
+            </div>
+            <div class="about_box">
+              <div class="about_info" style="width: 63px">Address:</div>
+              <div class="about_title"><%=user.address%></div>
+            </div>
+          </div>
+          <div class="border_bott"></div>
+          <div class="left_box_3">
+            <div class="left_3_title">Languages</div>
+            <div class="lang_info">
+              <span class="lang_name">Uzbek</span>
+              <span class="lang_pro">100%</span>
+            </div>
+            <div class="lang_stc_1">
+              <div class="stc_1_bord"></div>
+            </div>
+            <div class="lang_info">
+              <span class="lang_name" style="margin-top: 10px">Korean</span>
+              <span class="lang_pro">80%</span>
+            </div>
+            <div class="lang_stc_2">
+              <div class="stc_2_bord"></div>
+            </div>
+            <div class="lang_info">
+              <span class="lang_name" style="margin-top: 10px">English</span>
+              <span class="lang_pro">50%</span>
+            </div>
+            <div class="lang_stc_3">
+              <div class="stc_3_bord"></div>
+            </div>
+          </div>
+          <div class="border_bott"></div>
+          <div class="left_box_4">
+            <div class="left_4_title">Skills</div>
+            <div class="skill_info">
+              <span class="skill_name">HTML</span>
+              <span class="skill_pro">90%</span>
+            </div>
+            <div class="skill_stc_1">
+              <div class="stc_1_bord"></div>
+            </div>
+            <div class="skill_info">
+              <span class="skill_name" style="margin-top: 10px">CSS</span>
+              <span class="skill_pro">85%</span>
+            </div>
+            <div class="skill_stc_2">
+              <div class="stc_2_bord"></div>
+            </div>
+            <div class="skill_info">
+              <span class="skill_name" style="margin-top: 10px">Js</span>
+              <span class="skill_pro">80%</span>
+            </div>
+            <div class="skill_stc_3">
+              <div class="stc_3_bord"></div>
+            </div>
+            <div class="skill_info">
+              <span class="skill_name" style="margin-top: 10px">PHP</span>
+              <span class="skill_pro">75%</span>
+            </div>
+            <div class="skill_stc_3">
+              <div class="stc_3_bord" style="width: 140px"></div>
+            </div>
+            <div class="skill_info">
+              <span class="skill_name" style="margin-top: 10px">WordPress</span>
+              <span class="skill_pro">85%</span>
+            </div>
+            <div class="skill_stc_3">
+              <div class="stc_3_bord" style="width: 169px"></div>
+            </div>
+          </div>
+          <div class="border_bott"></div>
+          <div class="left_box_5">
+            <div class="left_5_title">Extra Skills</div>
+            <div class="skill_box">
+              <img src="icon/Icons-2.svg" alt="" />
+              <span class="skill_title">Bootstrap, Materialize</span>
+            </div>
+            <div class="skill_box">
+              <img src="icon/Icons-2.svg" alt="" />
+              <span class="skill_title">Stylus, Sass, Less</span>
+            </div>
+            <div class="skill_box">
+              <img src="icon/Icons-2.svg" alt="" />
+              <span class="skill_title">Gulp, Webpack, Grunt</span>
+            </div>
+            <div class="skill_box">
+              <img src="icon/Icons-2.svg" alt="" />
+              <span class="skill_title">GIT Knowledge</span>
+            </div>
+          </div>
+          <div class="border_bott"></div>
         </div>
-</body>
+        <!--  MIDDLE FRAME -->
+        <div class="midd_frame">
+          <div class="midd_top">
+            <div class="icon_12"></div>
+            <div class="icon_13"></div>
+            <div class="icon_16"></div>
+            <div class="icon_10"></div>
+            <div class="icon_51"></div>
+            <div class="icon_52"></div>
+            <div class="midd_top_left">
+              <div class="midd_title">Doctor neurologists in OHSU Hospital</div>
+              <span class="midd_desc"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
+                volutpat feugiat placerat lobortis. Natoque rutrum semper sed
+                suspendisse nunc lectus.</span
+              >
+              <a href="author.ejs" class="midd_btn">
+                <button>
+                  HIRE ME
+                  <img src="icon/frame.svg" alt="" />
+                </button>
+              </a>
+            </div>
+            <div class="midd_top_right">
+              <img src="images/main image.png" alt="" />
+            </div>
+          </div>
+          <div class="midd_bott">
+            <div class="midd_bott_title">
+              <span class="bott_title_info"> My Services</span>
+              <span class="bott_title_desc"
+                >Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit. lorem
+                ipsum</span
+              >
+            </div>
+            <div class="midd_bott_boxes">
+              <div class="midd_bott_box">
+                <img src="box_images/coding.png" alt="" />
+                <span class="box_title">Web Development</span>
+                <span class="box_desc">Blog, E-Commerce</span>
+              </div>
+              <div class="midd_bott_box">
+                <img src="box_images/Icons_illustration.png" alt="" />
+                <span class="box_title">UI/UX Design</span>
+                <span class="box_desc">Mobile App, Website Design</span>
+              </div>
+              <div class="midd_bott_box">
+                <img src="box_images/Microphone.png" alt="" />
+                <span class="box_title">Sound Design</span>
+                <span class="box_desc">Voice Over, Beat Making</span>
+              </div>
+              <div class="midd_bott_box">
+                <img src="box_images/Icons_game-development.png" alt="" />
+                <span class="box_title">Game Design</span>
+                <span class="box_desc">Character designn, Props & Objects</span>
+              </div>
+              <div class="midd_bott_box">
+                <img src="box_images/Photographer.png" alt="" />
+                <span class="box_title">Photography</span>
+                <span class="box_desc">Portrait, Product Photography</span>
+              </div>
+              <div class="bott_box_x">
+                <span class="box_title_x">Advertising</span>
+                <span class="box_desc_x"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vitae nulla diam in ac dictum a urna viverra morbi</span
+                >
+                <a href="./author"
+                  >ORDER NOW
+                  <img src="btn_icon/frame-2.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right_frame">
+          <div class="frst_icon">
+            <img src="menu_icon/contrast.svg" alt="" />
+          </div>
+          <div class="scnd_icons">
+            <div class="hover_box">
+              <div class="icon_hover home">
+                <img src="menu_icon/Icons_Home.svg" alt="" />
+              </div>
+            </div>
+            <div class="hover_box">
+              <div class="icon_hover">
+                <img src="menu_icon/file-code.svg" alt="" />
+              </div>
+            </div>
+            <div class="hover_box">
+              <div class="icon_hover">
+                <img src="menu_icon/file-code.svg" alt="" />
+              </div>
+            </div>
+            <div class="hover_box">
+              <div class="icon_hover">
+                <img src="menu_icon/cv.svg" alt="" />
+              </div>
+            </div>
+            <div class="hover_box">
+              <div class="icon_hover">
+                <img src="menu_icon/blog.svg" alt="" />
+              </div>
+            </div>
+            <div class="hover_box">
+              <div class="icon_hover">
+                <img src="menu_icon/contact.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
