@@ -1,4 +1,4 @@
-console.log("Jack Ma maslahatlari");
+/*console.log("Jack Ma maslahatlari");
 const list = [
   "Yahshi talaba bo'ling!", // 0-20
   "To'g'ri boshliq tanlang va ko'proq xato qiling!", // 20-30
@@ -38,7 +38,7 @@ console.log("passed here 1");
 
 */
 
-// ASYNC function
+/*      // ASYNC function
 
 // // bu functionda error hosil qilish uchun "throw new Error" syntx kerak.
 async function maslahatBering(a) {
@@ -55,7 +55,7 @@ async function maslahatBering(a) {
     //   return list [5];
     // }, 5000);
   }
-}
+}  */
 
 /*
 // then & catch   <--- ko'rinishida. jvb olish
@@ -71,6 +71,7 @@ maslahatBering(45)
 console.log("passed here 1")
 */
 
+/*
 // ASYNC & await   <--- ko'rinishida call qilib jvb olish.
 
 async function run() {
@@ -79,8 +80,41 @@ async function run() {
   console.log(javob);
   javob = await maslahatBering(31); // async func.lar birinchi yozilgan kod jvbi kelmaguncha passtdagi kodni ishga tushirmaydi.
   console.log(javob);
-  javob = await maslahatBering(41); // ketma ketlikni saqlab ishga tushirish uchun aynan async func ishlatiladi
+  javob = await maslahatBering(41); // ketma ketlikni saqlab ishga tushirish uchun aynan ASYNC func ishlatiladi
   console.log(javob);
 }
 
 run();
+*/
+
+console.log(' MIT TASK " A "');
+
+function TaskA(harf, matn) {
+  let sikl = 0;
+
+  for (let h = 0; h < matn.length; h++) {
+    if (matn[h] === harf) {
+      sikl++;
+    }
+  }
+
+  return sikl;
+}
+
+console.log(TaskA("l", "Alhamdulillah")); //call
+
+console.log("===========================");
+
+function sukcheA(mit, soz) {
+  let son = 0;
+
+  for (let m = 0; m < soz.length; m++) {
+    if (soz[m] === mit) {
+      son++;
+    }
+  }
+
+  return son;
+}
+
+console.log(sukcheA("e", "SteveDev")); // call
