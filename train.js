@@ -61,7 +61,7 @@ async function maslahatBering(a) {
 // then & catch   <--- ko'rinishida. jvb olish
 
 console.log("passed here 0");
-maslahatBering(45)
+maslahatBering(45)m           // shu yerda .then() avtomatik ravishda async funcni returndan qaytgan jvbni parametr qilib oladi.
   .then((data) => {
     console.log("javob:", data);
   })
@@ -105,7 +105,7 @@ console.log(TaskA("l", "Alhamdulillah")); //call
 
 console.log("===========================");
 
-function sukcheA(mit, soz) {
+function sukche_A(mit, soz) {
   let son = 0;
 
   for (let m = 0; m < soz.length; m++) {
@@ -117,4 +117,4 @@ function sukcheA(mit, soz) {
   return son;
 }
 
-console.log(sukcheA("e", "SteveDev")); // call
+console.log(sukche_A("e", "SteveDev")); // call
