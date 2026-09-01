@@ -86,16 +86,15 @@ async function run() {
 
 run();
 */
+// console.log(' MIT TASK " A "');
 
-/* console.log(' MIT TASK " A "');
+// Masalani izohi
+// A-TASK:
 
-Masalani izohi
-A-TASK: 
+// Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
+// MASALAN countLetter("e", "engineer") 3ni return qiladi.
 
-Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
-MASALAN countLetter("e", "engineer") 3ni return qiladi.
-
-masalani yechimi:
+// masalani yechimi:
 
 function TaskA(harf, matn) {
   let sikl = 0;
@@ -109,7 +108,7 @@ function TaskA(harf, matn) {
   return sikl;
 }
 
-console.log(TaskA("l", "Alhamdulillah")); //call
+console.log("Task A 1- misoli:", TaskA("l", "Alhamdulillah")); //call
 
 console.log("===========================");
 
@@ -125,7 +124,9 @@ function sukche_A(mit, soz) {
   return son;
 }
 
-console.log(sukche_A("e", "SteveDev")); // call */
+console.log("Task A 2- misoli:", sukche_A("e", "SteveDev")); // call */
+
+console.log("****************************");
 
 // MIT TASK B
 
@@ -136,31 +137,31 @@ console.log(sukche_A("e", "SteveDev")); // call */
 // Yuqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi YECHIM :
 
 // YECHIM :
-let soni = 0;
+
 function sukcheB(taskB) {
-  for (let i = 0; i <= taskB.length; i++) {
+  let soni = 0;
+  for (let i = 0; i < taskB.length; i++) {
     if (taskB[i] >= "0" && taskB[i] <= "9") {
       soni++;
     }
   }
-  console.log("TASKB ni 1-misoli", soni);
-
-  soni = 0;
+  console.log("TASK B ni 1-misoli", soni);
 }
 
 sukcheB("sho67mr34540bei999k");
-sukcheB("jcdkcdk6256de");
+
+console.log("===========================");
 
 // 2-misol
 
 function devops(masala) {
   let raqamsoni = 0;
-  for (let i = 0; i <= masala.length; i++) {
+  for (let i = 0; i < masala.length; i++) {
     if (masala[i] >= "0" && masala[i] <= "9") {
       raqamsoni++;
     }
   }
-  console.log("TASKB ni 2-misoli", raqamsoni);
+  console.log("TASK B ni 2-misoli", raqamsoni);
   return raqamsoni;
 }
 
