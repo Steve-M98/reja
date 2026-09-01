@@ -87,7 +87,15 @@ async function run() {
 run();
 */
 
-console.log(' MIT TASK " A "');
+/* console.log(' MIT TASK " A "');
+
+Masalani izohi
+A-TASK: 
+
+Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
+MASALAN countLetter("e", "engineer") 3ni return qiladi.
+
+masalani yechimi:
 
 function TaskA(harf, matn) {
   let sikl = 0;
@@ -117,4 +125,42 @@ function sukche_A(mit, soz) {
   return son;
 }
 
-console.log(sukche_A("e", "SteveDev")); // call
+console.log(sukche_A("e", "SteveDev")); // call */
+
+// MIT TASK B
+
+// Shunday, function tuzingki, bu function yagona parametrga ega bo'lib
+// string tarkibidagi sonlar miqdorini qaytarsin
+
+// Masalan: countDigits("ad2a54y79wet0sfgb9")
+// Yuqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi YECHIM :
+
+// YECHIM :
+
+function sukcheB(taskB) {
+  let soni = 0;
+  for (let i = 0; i <= taskB.length; i++) {
+    if (taskB[i] >= "0" && taskB[i] <= "9") {
+      soni++;
+    }
+  }
+  console.log("TASKB ni 1-misoli", soni);
+  return soni;
+}
+
+sukcheB("sho67mr34540bei999k");
+
+// 2-misol
+
+function devops(masala) {
+  let raqamsoni = 0;
+  for (let i = 0; i <= masala.length; i++) {
+    if (masala[i] >= "0" && masala[i] <= "9") {
+      raqamsoni++;
+    }
+  }
+  console.log("TASKB ni 2-misoli", raqamsoni);
+  return raqamsoni;
+}
+
+devops("tas567kBniye75chish974qiyin09boldi8");
