@@ -136,19 +136,20 @@ console.log(sukche_A("e", "SteveDev")); // call */
 // Yuqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi YECHIM :
 
 // YECHIM :
-
+let soni = 0;
 function sukcheB(taskB) {
-  let soni = 0;
   for (let i = 0; i <= taskB.length; i++) {
     if (taskB[i] >= "0" && taskB[i] <= "9") {
       soni++;
     }
   }
   console.log("TASKB ni 1-misoli", soni);
-  return soni;
+
+  soni = 0;
 }
 
 sukcheB("sho67mr34540bei999k");
+sukcheB("jcdkcdk6256de");
 
 // 2-misol
 
