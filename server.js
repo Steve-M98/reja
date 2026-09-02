@@ -3,7 +3,7 @@ require("dotenv").config();
 const http = require("http");
 const mongodb = require("mongodb");
 
-let db;
+// let db;
 const connectionString = process.env.MONGO_URI;
 mongodb.connect(
   connectionString,
