@@ -38,7 +38,7 @@ app.post("/create-item", (req, res) => {
   const new_reja = req.body.reja;
   db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
     console.log(data.ops);
-    res.json(data.ops[1]); // savol ops nima
+    res.json(data.ops[0]); // savol ops nima
   });
 });
 
