@@ -96,7 +96,7 @@ run();
 
 // masalani yechimi:
 
-function TaskA(harf, matn) {
+/* function TaskA(harf, matn) {
   let sikl = 0;
 
   for (let h = 0; h < matn.length; h++) {
@@ -124,9 +124,9 @@ function sukche_A(mit, soz) {
   return son;
 }
 
-console.log("Task A 2- misoli:", sukche_A("e", "SteveDev")); // call */
+console.log("Task A 2- misoli:", sukche_A("e", "SteveDev")); // call 
 
-console.log("****************************");
+console.log("****************************"); */
 
 // MIT TASK B
 
@@ -138,6 +138,7 @@ console.log("****************************");
 
 // YECHIM :
 
+/*
 function sukcheB(taskB) {
   let soni = 0;
   for (let i = 0; i < taskB.length; i++) {
@@ -165,4 +166,59 @@ function devops(masala) {
   return raqamsoni;
 }
 
-devops("tas567kBniye75chish974qiyin09boldi8");
+devops("tas567kBniye75chish974qiyin09boldi8"); */
+
+/*         MIT TASK " C "
+TASK-C
+
+Shop nomli class tuzing, va bu class 3 xill parametr qabul qilsin.
+Hamda classning quyidagdek 3'ta metodi bo'lsin:
+
+1) qoldiq
+2) sotish
+3) qabul
+
+Har bir metod ishga tushgan vaqtda log qilinsin
+
+MASALAN:
+const shop = new Shop(4, 5, 2)
+
+shop.qoldiq();
+natija qaytishi kerak: Hozir 20: 40'da 4'ta non, 5'ta lag'mon va 2'ta cola mavjud
+
+shop.sotish("non", 3); & shop.qabul("cola", 4); & shop.qoldiq();
+Natija qaytishi kerak: Hozir 20:50da 1ta non, 5ta lag'mon va 6ta cola mavjud!  */
+
+//. MIT TASK C YECHIM
+
+class shop_mall {
+  constructor(ali, vali, chala) {
+    this.name = ali;
+    this.ism = vali;
+    this.ati = chala;
+  }
+
+  qabul() {
+    console.log(
+      `Hozir soat ${new Date().toLocaleTimeString()} da ${this.name} kg Un, ${this.ism} tonna Kartoshka va ${this.ati} dona 5 litrli Paxta yog'i qabul qilindi.`,
+    );
+  }
+
+  sotuv(a, b) {
+    console.log(
+      `Bugun soat ${new Date().toLocaleTimeString()} da ${a} ta DENA ichimligi va ${b} dona BLISS ANOR li SOK sotildi.`,
+    );
+  }
+
+  qoldi(x, y, z) {
+    console.log(
+      `방금 전에 ${new Date().toLocaleTimeString()} da Skladda ${x} tonna Sement, ${y} dona Shifer va ${z} kg Oxak astatkada qoldi.`,
+    );
+  }
+}
+
+const shop = new shop_mall(1000, 600, 400);
+
+shop.qabul();
+shop.sotuv(75000, 4900);
+shop.qoldi(35000, 250000, 9800);
