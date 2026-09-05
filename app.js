@@ -16,6 +16,7 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
 
 // MongoDb Call
 const db = require("./server").db();
+const mongodb = require("mongodb");
 
 // 1: KIRISH CODE
 
@@ -37,8 +38,18 @@ app.post("/create-item", (req, res) => {
   const new_reja = req.body.reja;
   db.collection("plans").insertOne({ reja: new_reja }, (err, data) => {
     console.log(data.ops);
-    res.json(data.ops[1]);
+    res.json(data.ops[1]); // savol ops nima
   });
+});
+
+app.post("/delete-item", (req, res) => {
+  const id = req.body.id;
+  db.collection("plans").deleteOne(
+    { _id: new mongodb.ObjectId(id) },
+    function (err, data) {
+      res.json({ state: "success" });
+    },
+  );
 });
 
 app.get("/", function (req, res) {
