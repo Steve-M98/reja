@@ -192,33 +192,49 @@ Natija qaytishi kerak: Hozir 20:50da 1ta non, 5ta lag'mon va 6ta cola mavjud!  *
 //. MIT TASK C YECHIM
 
 class shop_mall {
-  constructor(ali, vali, chala) {
-    this.name = ali;
-    this.ism = vali;
-    this.ati = chala;
+  constructor(Un, kartoshka, yog) {
+    this.Un = Un;
+    this.kartoshka = kartoshka;
+    this.yog = yog;
   }
 
-  qabul() {
+  qabul(nomi, soni) {
+    if (nomi === "Un") {
+      this.Un += soni;
+    } else if (nomi === "kartoshka") {
+      this.kartoshka += soni;
+    } else if (nomi === "cola") {
+      this.yog += soni;
+    }
     console.log(
-      `Hozir soat ${new Date().toLocaleTimeString()} da ${this.name} kg Un, ${this.ism} tonna Kartoshka va ${this.ati} dona 5 litrli Paxta yog'i qabul qilindi.`,
+      `Hozir soat ${new Date().toLocaleTimeString()} da ${nomi} ${soni} tonna va qabul qilindi.`,
     );
   }
 
-  sotuv(a, b) {
+  sotuv(nomi, soni) {
+    if (nomi === "Un") {
+      this.Un -= soni;
+    } else if (nomi === "kartoshka") {
+      this.kartoshka -= soni;
+    } else if (nomi === "cola") {
+      this.yog -= soni;
+    }
     console.log(
-      `Bugun soat ${new Date().toLocaleTimeString()} da ${a} ta DENA ichimligi va ${b} dona BLISS ANOR li SOK sotildi.`,
+      `Bugun soat ${new Date().toLocaleTimeString()} da ${nomi} ta ${soni} tonna sotildi.`,
     );
   }
 
-  qoldi(x, y, z) {
+  qoldi() {
     console.log(
-      `방금 전에 ${new Date().toLocaleTimeString()} da Skladda ${x} tonna Sement, ${y} dona Shifer va ${z} kg Oxak astatkada qoldi.`,
+      `방금 전에 ${new Date().toLocaleTimeString()} da Skladda ${this.Un} kg Un, ${this.kartoshka} tonna Kartoshka va ${this.yog} ta 5 litrlik Pista yog'i astatkada qoldi.`,
     );
   }
 }
 
 const shop = new shop_mall(1000, 600, 400);
 
-shop.qabul();
-shop.sotuv(75000, 4900);
-shop.qoldi(35000, 250000, 9800);
+shop.qabul("Un", 1000);
+shop.sotuv("kartoshka", 500);
+shop.qoldi();
+
+console.log("*********************************");
