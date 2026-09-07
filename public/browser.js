@@ -1,9 +1,8 @@
 console.log("Frontend JS ishga tushdi");
 
 function itemTemplate(item) {
-  return ` <li
-              class="list-group-item list-group-item-info d-flex align-items-center justify-content-between"
-            >
+  return ` <li style = "background-color:yellowgreen;"
+              class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
               <span class="item-text">${item.reja}</span>
               <div>
                 <button data-id="${item._id}" class="edit-me btn btn-secondary btn-sm mr-1">
@@ -49,7 +48,35 @@ document.addEventListener("click", function (s) {
   }
 
   // edit oper
+
   if (s.target.classList.contains("edit-me")) {
-    alert("Siz edit tugmasini bosdingiz");
+    let userInput = prompt(
+      "O'zgartirish kiriting",
+      s.target.parentElement.parentElement.querySelector(".item-text")
+        .innerHTML,
+    );
+    if (userInput) {
+      axios
+        .post("/edit-item", {
+          id: s.target.getAttribute("data-id"),
+          new_input: userInput,
+        })
+        .then((response) => {
+          console.log(response.data);
+          s.target.parentElement.parentElement.querySelector(
+            ".item-text",
+          ).innerHTML = userInput;
+        })
+        .catch((err) => {
+          console.log("Iltimos qaytadan urunib ko'ring");
+        });
+    }
   }
+});
+
+document.getElementById("clean-all").addEventListener("click", function () {
+  axios.post("/delete-all", { delete_all: true }).then((response) => {
+    alert(response.data.state);
+    document.location.reload();
+  });
 });
