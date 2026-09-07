@@ -191,6 +191,7 @@ Natija qaytishi kerak: Hozir 20:50da 1ta non, 5ta lag'mon va 6ta cola mavjud!  *
 
 //. MIT TASK C YECHIM
 
+/*
 class shop_mall {
   constructor(Un, kartoshka, yog) {
     this.Un = Un;
@@ -237,4 +238,25 @@ shop.qabul("Un", 1000);
 shop.sotuv("kartoshka", 500);
 shop.qoldi();
 
-console.log("*********************************");
+*/
+
+// console.log("*********************************");
+
+/* TASK D
+
+Ikkita parametra ega function tuzing, va functioning berilgan birinchi va ikkinchi parametr qiymatlari o'zaro to'liq mos kelsa true qiymat qaytarsin.
+
+Masalan: checkContent("mitgroup", "gmtiprou") return true */
+
+function taskd(a, b) {
+  if (a.length !== b.length) return false; // ikkala parametrni uzunlik miqdori teng bo'lsa kod davom etadi bo'lmsa false b.b to'xtaydi
+
+  let sortedA = a.split("").sort().join(""); // split -> so'zni harflarga ajratib beradi,   sort -->  alifbo tartibibda saralaydi
+  let sortedB = b.split("").sort().join(""); // join --> saralangan harflarni jamlaydi
+
+  return sortedA === sortedB;
+}
+
+console.log(taskd("makhmudov", "shoyadbek"));
+console.log(taskd("shoyadbek", "kebdayosh"));
+console.log(taskd("leganda1998", "ganleda0111"));
