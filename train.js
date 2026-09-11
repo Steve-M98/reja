@@ -248,6 +248,7 @@ Ikkita parametra ega function tuzing, va functioning berilgan birinchi va ikkinc
 
 Masalan: checkContent("mitgroup", "gmtiprou") return true */
 
+/*
 function taskd(a, b) {
   if (a.length !== b.length) return false; // ikkala parametrni uzunlik miqdori teng bo'lsa kod davom etadi bo'lmsa false b.b to'xtaydi
 
@@ -259,4 +260,21 @@ function taskd(a, b) {
 
 console.log(taskd("makhmudov", "shoyadbek"));
 console.log(taskd("shoyadbek", "kebdayosh"));
-console.log(taskd("leganda1998", "ganleda0111"));
+console.log(taskd("leganda1998", "ganleda0111")); */
+
+// =====================================
+
+// TASK E
+
+// Shunday function tuzing, u bitta string argumentini qabul qilib, qabul qilingan stringni teskari ko'rinishda return qilsin.
+
+// Masalan: getReverse("hello") return "olleh"
+
+function taskE(a) {
+  if (typeof a !== "string") return false; //
+
+  //let sortedA = a.split("").sort().join("");
+  return a.split("").reverse().join("");
+}
+
+console.log("javob:", taskE("kebdayohs"));

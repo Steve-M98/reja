@@ -20,9 +20,9 @@ const mongodb = require("mongodb");
 
 // 1: KIRISH CODE
 
-app.use(express.static("public"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public")); // public faylni userga ochiq qilish uchun yozildi
+app.use(express.json()); // REAST API ni ishga tushirish uchun yozildi.
+app.use(express.urlencoded({ extended: true })); // Traditional API ni ishga tushirish uchun yozildi. Agar bu yozilmasa saytga kirib ENTER bosilganda saytga kirmaydi. sababi  Browser doim 1 marttalik GET so'rovini qabul qilib keyin ishlaydi
 
 // 2: SESSION CODE
 
