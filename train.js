@@ -269,12 +269,27 @@ console.log(taskd("leganda1998", "ganleda0111")); */
 // Shunday function tuzing, u bitta string argumentini qabul qilib, qabul qilingan stringni teskari ko'rinishda return qilsin.
 
 // Masalan: getReverse("hello") return "olleh"
-
+/*
 function taskE(a) {
   if (typeof a !== "string") return false; //
 
-  //let sortedA = a.split("").sort().join("");
   return a.split("").reverse().join("");
 }
 
-console.log("javob:", taskE("kebdayohs"));
+console.log("javob:", taskE("kebdayohs"));  */
+
+// =====================================
+
+//      TASK F
+
+// Yagona string argumentga ega findDoublers nomli function tuzing. Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa true yokida false natija qaytarsin.
+
+// Masalan: findDoublers("hello") return true
+
+function findDoublers(taskF) {
+  if (typeof taskF !== "string") return false;
+  return new Set(taskF).size !== taskF.length; // new Set --> Set orqali bir hillarini olib tashlab yangi object yasa deyapmiz,
+} //  olib tashlangan yangi objectni soni bilan eski holatdagi uzunligi bir hilmi deb tekshiryapmiz.
+
+console.log(findDoublers("MIT A-7 REJA deploy qilindi"));
+console.log(findDoublers("arfytvcnjoplk"));
