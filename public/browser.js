@@ -32,8 +32,9 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
     });
 });
 
+//delete oper
+
 document.addEventListener("click", function (s) {
-  //delete oper
   if (s.target.classList.contains("delete-me")) {
     if (confirm("Aniq o'chirmoqchimisiz ?")) {
       axios
@@ -74,6 +75,8 @@ document.addEventListener("click", function (s) {
     }
   }
 });
+
+// delete- all oper
 
 document.getElementById("clean-all").addEventListener("click", function () {
   axios.post("/delete-all", { delete_all: true }).then((response) => {
