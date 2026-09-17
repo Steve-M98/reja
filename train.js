@@ -286,6 +286,7 @@ console.log("javob:", taskE("kebdayohs"));  */
 
 // Masalan: findDoublers("hello") return true
 
+/*
 function findDoublers(taskF) {
   if (typeof taskF !== "string") return false;
   return new Set(taskF).size !== taskF.length; // new Set --> Set orqali bir hillarini olib tashlab yangi object yasa deyapmiz,
@@ -293,3 +294,26 @@ function findDoublers(taskF) {
 
 console.log(findDoublers("MIT A-7 REJA deploy qilindi"));
 console.log(findDoublers("arfytvcnjoplk"));
+*/
+
+/*
+ TASK ' G '
+Yagona parametrga ega function tuzing. Array tarkibidagi birinchi eng katta qiymatning indeksini qaytarsin.
+
+Masalan: getHighestIndex([5, 21, 12, 21, 8]) return 1    */
+
+function taskG(arr) {
+  let highest = arr[0]; // array ichidagi eng katta qiymatni saqlash uchun o'zgaruvchi yaratdik va arrayning 0 indeksidagini qiymat qilib berildi
+  let highestIndex = 0; // array ichidagi eng katta qiymatnin INDEX ni shu yerda saqlash uchun yaratildi.
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > highest) {
+      highest = arr[i]; // bu yerlarda loop o'zini ishini ajaradi.
+      highestIndex = i;
+    }
+  }
+
+  return highestIndex;
+}
+
+console.log(taskG([5, 21, 12, 21, 8])); // 1
