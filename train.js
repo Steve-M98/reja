@@ -294,7 +294,10 @@ function findDoublers(taskF) {
 
 console.log(findDoublers("MIT A-7 REJA deploy qilindi"));
 console.log(findDoublers("arfytvcnjoplk"));
+
 */
+
+// console.log("*********************************");
 
 /*
  TASK ' G '
@@ -302,6 +305,7 @@ Yagona parametrga ega function tuzing. Array tarkibidagi birinchi eng katta qiym
 
 Masalan: getHighestIndex([5, 21, 12, 21, 8]) return 1    */
 
+/*
 function taskG(arr) {
   let highest = arr[0]; // array ichidagi eng katta qiymatni saqlash uchun o'zgaruvchi yaratdik va arrayning 0 indeksidagini qiymat qilib berildi
   let highestIndex = 0; // array ichidagi eng katta qiymatnin INDEX ni shu yerda saqlash uchun yaratildi.
@@ -316,4 +320,27 @@ function taskG(arr) {
   return highestIndex;
 }
 
-console.log(taskG([5, 21, 12, 21, 8])); // 1
+console.log(taskG([5, 21, 12, 21, 8])); // 1. */
+
+// console.log("*********************************");
+
+/* TASK K
+
+Berilayotgan parametr tarkibida nechta unli harf bor ekanligini aniqlovchi function tuzing.
+
+Masalan: countVowels("string") return 1  */
+
+function taskK(str) {
+  let vowels = "";
+
+  for (let i = 0; i < str.length; i++) {
+    if ("aeiou".includes(str[i].toLowerCase())) {
+      // bu yerda includes asosiy ishni bajarib beryapti includes() string ichidagi "aeiou" bormi ekshir deyildi. keyin toLowerCase bilan katta harflarni ham tekshir degan buyruq berildi..
+      vowels += str[i];
+    }
+  }
+
+  return vowels;
+}
+
+console.log(taskK("Salom")); // ao
